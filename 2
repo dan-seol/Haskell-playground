@@ -1,0 +1,14 @@
+import qualified Data.Bytestring.Lazy as L
+import qualified Data.Bytestring as S
+
+bytestringOne :: Bytestring
+bytestringOne = L.pack [99,97,110]
+
+bytestringTwo :: Bytestring
+bytestringTwo = L.pack [98..120]
+
+bytestringThree :: Bytestring
+bytestringThree = L.pack [98,111,114,116]
+
+threeUnpacked :: [Int]
+threeUnpacked = L.unpack bytestringThree
